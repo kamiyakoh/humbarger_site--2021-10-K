@@ -1,7 +1,7 @@
 @use "../../global"as g;
 
 .c-card {
-    margin: 10px;
+    margin: 10px 0 10px;
     height: 642px;
 
     &__flex {
@@ -14,7 +14,7 @@
     &__ttl {
         font-size: 4.1rem;
         font-family: g.$font--roboto;
-        color: g.$color--lightGray;
+        color: g.$color--warmwhtie;
         position: relative;
 
         &::after {
@@ -32,7 +32,6 @@
     &__heading {
         font-size: 2.2rem;
         font-family: g.$font--Mplus-Bold, g.$font--Mplus-j-Bold;
-        font-weight: bold;
     }
 
     &__txt {

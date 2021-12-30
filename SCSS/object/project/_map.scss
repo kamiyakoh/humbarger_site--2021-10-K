@@ -1,0 +1,37 @@
+@use "../../global"as g;
+
+.p-map {
+    height: 690px;
+    background-image: url(../../images/map__front-page--sp.png);
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 50px;
+    padding-bottom: 50px;
+
+    &__bgshadow {
+        height: inherit;
+        background: linear-gradient(g.$grargba--shadow-A 0%, g.$grargba--shadow-A 60%, g.$grargba--shadow-B 60%, g.$grargba--shadow-B 100%);
+    }
+
+    &__inner {
+        padding-top: 40px;
+        margin: 0 42px;
+    }
+
+    &__heading {
+        position: relative;
+        margin-bottom: 30px;
+
+        &::after {
+            content: "";
+            width: 75px;
+            height: 2px;
+            display: inline-block;
+            background-color: g.$color--white;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+        }
+    }
+}

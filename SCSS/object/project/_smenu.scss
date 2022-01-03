@@ -1,0 +1,28 @@
+@use "../../global"as g;
+
+.p-smenu {
+    &__main {
+        color: g.$color--gray;
+        padding-top: 212px;
+
+
+        &>li {
+            margin-left: 14%;
+
+            &>a {
+                font-size: 2.4rem;
+                font-family: g.$font--Mplus-Bold, g.$font--Mplus-j-Bold;
+            }
+        }
+    }
+
+    &__sub {
+        padding: 39px 7% 17px;
+
+
+        li {
+            font-size: 2.0rem;
+            margin-bottom: 22px;
+        }
+    }
+}

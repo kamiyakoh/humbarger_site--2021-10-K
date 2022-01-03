@@ -1,0 +1,14 @@
+@use "../../global"as g;
+
+.c-smenu {
+    &__blank {
+        background-color: g.$bgrgba--menubg;
+        width: 47px;
+    }
+
+    &__nav {
+        background-color: g.$gracolor--cream-A;
+        position: relative;
+        width: 100%;
+    }
+}

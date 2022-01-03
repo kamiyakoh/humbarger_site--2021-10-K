@@ -74,6 +74,12 @@ a {
   color: #FFF;
 }
 
+.l-smenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c-mainvisual {
   height: 285px;
   display: -webkit-box;
@@ -143,6 +149,46 @@ a {
   font-size: 1.4rem;
   line-height: 3.3rem;
   overflow: hidden;
+}
+
+.c-smenu__blank {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 47px;
+}
+.c-smenu__nav {
+  background-color: #F2EDE9;
+  position: relative;
+  width: 100%;
+}
+
+.c-btn__close {
+  position: absolute;
+  right: 17px;
+  top: 25px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.c-btn__close span {
+  display: block;
+  position: relative;
+}
+.c-btn__close span::before, .c-btn__close span::after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 45px;
+  height: 6px;
+  background-color: #707070;
+}
+.c-btn__close span::before {
+  -webkit-transform: translate(50%, 50%) rotate(45deg);
+          transform: translate(50%, 50%) rotate(45deg);
+}
+.c-btn__close span::after {
+  -webkit-transform: translate(50%, 50%) rotate(-45deg);
+          transform: translate(50%, 50%) rotate(-45deg);
 }
 
 .p-btn__menu {
@@ -263,6 +309,25 @@ a {
   position: absolute;
   bottom: -20px;
   left: 0;
+}
+
+.p-smenu__main {
+  color: #707070;
+  padding-top: 212px;
+}
+.p-smenu__main > li {
+  margin-left: 14%;
+}
+.p-smenu__main > li > a {
+  font-size: 2.4rem;
+  font-family: "M+ M Type-1 (basic latin) Bold", "M+ Type-1 (general-j) Bold";
+}
+.p-smenu__sub {
+  padding: 39px 7% 17px;
+}
+.p-smenu__sub li {
+  font-size: 2rem;
+  margin-bottom: 22px;
 }
 
 .p-footer__info {

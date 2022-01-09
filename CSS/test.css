@@ -1,0 +1,17 @@
+.p-searchForm {
+  position: relative;
+}
+.p-searchForm::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  top: 11px;
+  width: 24px;
+  height: 24px;
+  background: url(../images/seach-icon.png) no-repeat center center/auto 100%;
+}
+.p-searchForm input {
+  padding-left: calc(16px + 24px);
+}
+/*# sourceMappingURL=test.css.map */

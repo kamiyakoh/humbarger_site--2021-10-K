@@ -1,0 +1,17 @@
+@use "../../global"as g;
+
+.c-bg {
+    &--white {
+        background-color: g.$color--white;
+    }
+
+    &--lightCream {
+        background-color: g.$bgcolor--lightCream;
+    }
+
+    &__bra {
+        &--beige {
+            background: linear-gradient(g.$gracolor--beige-A, g.$gracolor--beige-B);
+        }
+    }
+}

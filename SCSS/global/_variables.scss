@@ -7,14 +7,14 @@ $color--brown: #3C2A10;
 
 // background-color
 
-$bgcolor--header: #FFF7EF;
-$bgrgba--menubg: rgba(0, 0, 0, 0.5);
+$bgcolor--lightCream: #FFF7EF;
+$bgrgba--shadowScreen: rgba(0, 0, 0, 0.5);
 $bgrgba--board: rgba(255, 255, 255, 0.8);
 
 // gradation-color
 
-$gracolor--seach__submit-A: #F2EDE9;
-$gracolor--seach__submit-B: #DED8D3;
+$gracolor--beige-A: #F2EDE9;
+$gracolor--beige-B: #DED8D3;
 $gracolor--cream-A: #F2EDE9;
 $gracolor--cream-B: #DED8D3;
 $grargba--shadow-A: rgba(0, 0, 0, 0.6);
@@ -26,3 +26,7 @@ $font--roboto: 'Roboto',
 sans-serif;
 $font--Mplus-Bold: 'M+ M Type-1 (basic latin) Bold';
 $font--Mplus-j-Bold: 'M+ Type-1 (general-j) Bold';
+
+// transition-time
+
+$transtime--slide: .5s;

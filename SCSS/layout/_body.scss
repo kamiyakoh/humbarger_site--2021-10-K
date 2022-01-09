@@ -1,0 +1,7 @@
+@use "../global"as g;
+
+body {
+    &.fix {
+        position: fixed;
+    }
+}

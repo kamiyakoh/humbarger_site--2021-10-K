@@ -1,50 +1,18 @@
 @use "../../global"as g;
 
-.p-btn__menu {
-    font-size: 2rem;
-    font-family: g.$font--roboto;
-    font-weight: bold;
-    line-height: 1.3;
-    position: absolute;
-    top: 14px;
-    right: 4.3vw;
-}
-
-.p-header__ttl {
-    font-size: 4rem;
-    font-family: g.$font--roboto;
-    font-weight: bold;
-    line-height: 1.325;
-    margin-top: 40px;
-}
-
-.p-search-form {
-    position: relative;
-    max-width: 100%;
-    margin: 38px 0px 40px 31px;
-    padding-right: 121px;
-
-    &__keyword {
-        height: 46px;
-        width: 100%;
-        padding: 0 11px;
-        border: 1px solid g.$color--gray;
-        border-radius: 10px;
-        margin-right: 12px;
-        background-color: g.$color--white;
+.p-header {
+    &__menuBtn {
+        font-size: 2rem;
+        line-height: 1.3;
+        position: absolute;
+        top: 14px;
+        right: 4.3vw;
+        cursor: pointer;
     }
 
-    &__submit {
-        position: absolute;
-        right: 31px;
-        top: 0;
-        width: 78px;
-        height: 46px;
-        line-height: 2;
-        border: 1px solid g.$color--gray;
-        border-radius: 10px;
-        background: linear-gradient(g.$gracolor--seach__submit-A, g.$gracolor--seach__submit-B);
-        color: g.$color--gray;
-        font-weight: bold;
+    &__ttl {
+        font-size: 4rem;
+        line-height: 1.325;
+        margin-top: 40px;
     }
 }

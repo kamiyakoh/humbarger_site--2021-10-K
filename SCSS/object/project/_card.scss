@@ -1,17 +1,34 @@
 @use "../../global"as g;
 
 .p-card {
+    margin: 20px 0 10px;
+    height: 642px;
+    background-size: cover;
+
     &__inner {
         margin: 0 10px;
     }
 
     &__ttl {
+        font-size: 4.1rem;
+        color: g.$color--warmwhtie;
+        position: relative;
         margin-top: 11px;
+
+        &::after {
+            content: "";
+            width: 34px;
+            height: 4px;
+            display: inline-block;
+            background-color: g.$color--white;
+            position: absolute;
+            bottom: -19.3px;
+            left: 0;
+        }
     }
 
 
     &__board {
-        background-color: g.$bgrgba--board;
         color: g.$color--brown;
         height: 164px;
         overflow-wrap: break-word;
@@ -23,15 +40,11 @@
         padding-top: 19px;
     }
 
-    &--takeout {
-        background-image: url(../images/front-page__card--takeout.png);
-        background-size: cover;
-        margin-top: 20px;
+    &__heading {
+        font-size: 2.2rem;
     }
 
-    &--eatin {
-        background-image: url(../images/front-page__card--eatin.png);
-        background-size: cover;
-        margin-top: 20px;
+    &__txt {
+        line-height: 1.4375;
     }
 }

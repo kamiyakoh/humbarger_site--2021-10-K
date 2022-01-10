@@ -1,12 +1,11 @@
 @use "../../global"as g;
 
 .p-mainvisual {
-    &--frontpage {
-        background-image: url(../images/banner__front-page--sp.png);
-        background-position: center center;
-    }
+    height: 285px;
+    background-position: center center;
 
     &__ttl {
+        font-size: 3.6rem;
         margin-left: 2.5rem;
     }
 }

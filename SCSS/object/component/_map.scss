@@ -1,7 +1,7 @@
 @use "../../global"as g;
 
 .c-map {
-    font-family: g.$font--Mplus-Bold, g.$font--Mplus-j-Bold;
+    font-family: g.$font--Mplus-Bold;
     color: g.$color--white;
 
     &__heading {

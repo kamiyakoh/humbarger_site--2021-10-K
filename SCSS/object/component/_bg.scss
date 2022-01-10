@@ -9,9 +9,31 @@
         background-color: g.$bgcolor--lightCream;
     }
 
+    &__rgba {
+        &--board {
+            background-color: g.$bgrgba--board;
+        }
+    }
+
     &__bra {
         &--beige {
             background: linear-gradient(g.$gracolor--beige-A, g.$gracolor--beige-B);
+        }
+    }
+
+    &__img {
+        &--burgerOnTable {
+            background-image: url(../images/card--burgerOnTable.png);
+        }
+
+        &--burgerAndFrenchFries {
+            background-image: url(../images/card--burberAndfrenchFries.png);
+        }
+    }
+
+    &__mainvisual {
+        &--frontPage {
+            background-image: url(../images/mainvisual__frontPage--sp.png);
         }
     }
 }

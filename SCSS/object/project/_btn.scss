@@ -1,0 +1,9 @@
+@use "../../global"as g;
+
+.c-btn {
+    &__close {
+        position: absolute;
+        right: 17px;
+        top: 25px;
+    }
+}

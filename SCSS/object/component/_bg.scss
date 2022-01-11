@@ -22,8 +22,16 @@
     }
 
     &__img {
+        &--brownWall {
+            background-image: url(../images/brownWall.png);
+        }
+
         &--burgerOnTable {
             background-image: url(../images/card--burgerOnTable.png);
+        }
+
+        &--map {
+            background-image: url(../images/map--sp.png);
         }
 
         &--burgerAndFrenchFries {

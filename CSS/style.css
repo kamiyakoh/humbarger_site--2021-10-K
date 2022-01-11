@@ -82,7 +82,6 @@ body.fix {
 }
 
 .l-footer {
-  background-image: url(../images/footer__bg.png);
   background-repeat: repeat;
   text-align: center;
   display: flex;
@@ -122,8 +121,14 @@ body.fix {
 .c-bg__bra--beige {
   background: linear-gradient(#F2EDE9, #DED8D3);
 }
+.c-bg__img--brownWall {
+  background-image: url(../images/brownWall.png);
+}
 .c-bg__img--burgerOnTable {
   background-image: url(../images/card--burgerOnTable.png);
+}
+.c-bg__img--map {
+  background-image: url(../images/map--sp.png);
 }
 .c-bg__img--burgerAndFrenchFries {
   background-image: url(../images/card--burberAndfrenchFries.png);
@@ -141,7 +146,7 @@ body.fix {
 }
 
 .c-subttlM {
-  font-weight: bold;
+  font-family: "M+ M Type-1 (basic latin) Bold", "M+ Type-1 (general-j) Bold";
 }
 
 .c-formbox {
@@ -163,24 +168,7 @@ body.fix {
   justify-content: space-between;
 }
 
-.c-map {
-  font-family: "M+ M Type-1 (basic latin) Bold", "M+ Type-1 (general-j) Bold";
-  color: #FFF;
-}
-.c-map__heading {
-  font-size: 3rem;
-}
-.c-map__txt {
-  height: 518px;
-  font-size: 1.4rem;
-  line-height: 3.3rem;
-  overflow: hidden;
-}
-
 .c-btn__close {
-  position: absolute;
-  right: 17px;
-  top: 25px;
   width: 32px;
   height: 32px;
   cursor: pointer;
@@ -217,6 +205,12 @@ body.fix {
   font-size: 4rem;
   line-height: 1.325;
   margin-top: 40px;
+}
+
+.c-btn__close {
+  position: absolute;
+  right: 17px;
+  top: 25px;
 }
 
 .p-searchForm {
@@ -308,9 +302,9 @@ body.fix {
 
 .p-map {
   height: 690px;
-  background-image: url(../images/map__front-page--sp.png);
   background-position: center center;
   background-size: cover;
+  color: #FFF;
   overflow: hidden;
   margin-top: 50px;
   padding-bottom: 50px;
@@ -325,6 +319,7 @@ body.fix {
 }
 .p-map__heading {
   position: relative;
+  font-size: 3rem;
   margin-bottom: 30px;
 }
 .p-map__heading::after {
@@ -336,6 +331,12 @@ body.fix {
   position: absolute;
   bottom: -20px;
   left: 0;
+}
+.p-map__txt {
+  height: 518px;
+  font-size: 1.4rem;
+  line-height: 3.3rem;
+  overflow: hidden;
 }
 
 .p-sidemenu__shadowScreen {

@@ -1,6 +1,6 @@
-@use "../../global"as g;
+@use "../../foundation"as f;
 
 .c-formbox {
-    border: 1px solid g.$color--gray;
+    border: 1px solid f.$color--gray;
     border-radius: 10px;
 }

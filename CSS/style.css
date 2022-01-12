@@ -121,6 +121,9 @@ body.fix {
 .c-bg__bra--beige {
   background: linear-gradient(#F2EDE9, #DED8D3);
 }
+.c-bg__bra--shadow64 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.39) 60%, rgba(0, 0, 0, 0.39) 100%);
+}
 .c-bg__img--brownWall {
   background-image: url(../images/brownWall.png);
 }
@@ -162,13 +165,35 @@ body.fix {
 }
 
 .c-card__flex {
-  height: inherit;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.p-header__menuBtn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-size: 2rem;
+  line-height: 1.3;
+  position: absolute;
+  top: 14px;
+  right: 4.3vw;
+  cursor: pointer;
+}
+.p-header__ttl {
+  font-size: 4rem;
+  line-height: 1.325;
+  margin-top: 40px;
+}
+
 .c-btn__close {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  right: 17px;
+  top: 25px;
   width: 32px;
   height: 32px;
   cursor: pointer;
@@ -191,26 +216,6 @@ body.fix {
 }
 .c-btn__close span::after {
   transform: translate(50%, 50%) rotate(-45deg);
-}
-
-.p-header__menuBtn {
-  font-size: 2rem;
-  line-height: 1.3;
-  position: absolute;
-  top: 14px;
-  right: 4.3vw;
-  cursor: pointer;
-}
-.p-header__ttl {
-  font-size: 4rem;
-  line-height: 1.325;
-  margin-top: 40px;
-}
-
-.c-btn__close {
-  position: absolute;
-  right: 17px;
-  top: 25px;
 }
 
 .p-searchForm {
@@ -261,18 +266,16 @@ body.fix {
 }
 
 .p-card {
+  min-height: 642px;
   margin: 20px 0 10px;
-  height: 642px;
+  padding: 0 10px;
   background-size: cover;
-}
-.p-card__inner {
-  margin: 0 10px;
 }
 .p-card__ttl {
   font-size: 4.1rem;
   color: #EAEAEA;
   position: relative;
-  margin-top: 11px;
+  margin: 11px 0 45px;
 }
 .p-card__ttl::after {
   content: "";
@@ -286,9 +289,10 @@ body.fix {
 }
 .p-card__board {
   color: #3C2A10;
-  height: 164px;
+  min-height: 164px;
   overflow-wrap: break-word;
   margin-bottom: 10px;
+  padding: 0 10px;
 }
 .p-card__heading, .p-card__txt {
   padding-top: 19px;
@@ -301,17 +305,11 @@ body.fix {
 }
 
 .p-map {
-  height: 690px;
+  min-height: 690px;
   background-position: center center;
   background-size: cover;
   color: #FFF;
-  overflow: hidden;
   margin-top: 50px;
-  padding-bottom: 50px;
-}
-.p-map__bgshadow {
-  height: inherit;
-  background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.39) 60%, rgba(0, 0, 0, 0.39) 100%);
 }
 .p-map__inner {
   padding-top: 40px;
@@ -333,10 +331,9 @@ body.fix {
   left: 0;
 }
 .p-map__txt {
-  height: 518px;
   font-size: 1.4rem;
   line-height: 3.3rem;
-  overflow: hidden;
+  padding-bottom: 50px;
 }
 
 .p-sidemenu__shadowScreen {

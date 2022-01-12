@@ -1,23 +1,27 @@
-@use "../../global"as g;
+@use "../../foundation"as f;
 
 .c-bg {
     &--white {
-        background-color: g.$color--white;
+        background-color: f.$color--white;
     }
 
     &--lightCream {
-        background-color: g.$bgcolor--lightCream;
+        background-color: f.$bgcolor--lightCream;
     }
 
     &__rgba {
         &--board {
-            background-color: g.$bgrgba--board;
+            background-color: f.$bgrgba--board;
         }
     }
 
     &__bra {
         &--beige {
-            background: linear-gradient(g.$gracolor--beige-A, g.$gracolor--beige-B);
+            background: linear-gradient(f.$gracolor--beige-A, f.$gracolor--beige-B);
+        }
+
+        &--shadow64 {
+            background: linear-gradient(f.$grargba--shadow-A 0%, f.$grargba--shadow-A 60%, f.$grargba--shadow-B 60%, f.$grargba--shadow-B 100%);
         }
     }
 

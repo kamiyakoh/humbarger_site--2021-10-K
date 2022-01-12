@@ -1,26 +1,23 @@
-@use "../../global"as g;
+@use "../../foundation"as f;
 
 .p-card {
+    min-height: 642px;
     margin: 20px 0 10px;
-    height: 642px;
+    padding: 0 10px;
     background-size: cover;
-
-    &__inner {
-        margin: 0 10px;
-    }
 
     &__ttl {
         font-size: 4.1rem;
-        color: g.$color--warmwhtie;
+        color: f.$color--warmwhtie;
         position: relative;
-        margin-top: 11px;
+        margin: 11px 0 45px;
 
         &::after {
             content: "";
             width: 34px;
             height: 4px;
             display: inline-block;
-            background-color: g.$color--white;
+            background-color: f.$color--white;
             position: absolute;
             bottom: -19.3px;
             left: 0;
@@ -29,10 +26,11 @@
 
 
     &__board {
-        color: g.$color--brown;
-        height: 164px;
+        color: f.$color--brown;
+        min-height: 164px;
         overflow-wrap: break-word;
         margin-bottom: 10px;
+        padding: 0 10px;
     }
 
     &__heading,

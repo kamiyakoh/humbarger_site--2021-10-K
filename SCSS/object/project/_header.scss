@@ -1,7 +1,8 @@
-@use "../../global"as g;
+@use "../../foundation"as f;
 
 .p-header {
     &__menuBtn {
+        appearance: none;
         font-size: 2rem;
         line-height: 1.3;
         position: absolute;

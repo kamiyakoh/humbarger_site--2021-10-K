@@ -1,18 +1,11 @@
-@use "../../global"as g;
+@use "../../foundation"as f;
 
 .p-map {
-    height: 690px;
+    min-height: 690px;
     background-position: center center;
     background-size: cover;
-    color: g.$color--white;
-    overflow: hidden;
+    color: f.$color--white;
     margin-top: 50px;
-    padding-bottom: 50px;
-
-    &__bgshadow {
-        height: inherit;
-        background: linear-gradient(g.$grargba--shadow-A 0%, g.$grargba--shadow-A 60%, g.$grargba--shadow-B 60%, g.$grargba--shadow-B 100%);
-    }
 
     &__inner {
         padding-top: 40px;
@@ -29,7 +22,7 @@
             width: 75px;
             height: 2px;
             display: inline-block;
-            background-color: g.$color--white;
+            background-color: f.$color--white;
             position: absolute;
             bottom: -20px;
             left: 0;
@@ -37,9 +30,8 @@
     }
 
     &__txt {
-        height: 518px;
         font-size: 1.4rem;
         line-height: 3.3rem;
-        overflow: hidden;
+        padding-bottom: 50px;
     }
 }

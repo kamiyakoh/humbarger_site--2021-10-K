@@ -1,4 +1,4 @@
-@use "../../global"as g;
+@use "../../foundation"as f;
 
 .p-searchForm {
     position: relative;
@@ -32,7 +32,7 @@
         width: 78px;
         height: 46px;
         line-height: 2;
-        color: g.$color--gray;
+        color: f.$color--gray;
         font-size: 1.6rem;
     }
 }

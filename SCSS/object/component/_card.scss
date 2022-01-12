@@ -1,8 +1,7 @@
-@use "../../global"as g;
+@use "../../foundation"as f;
 
 .c-card {
     &__flex {
-        height: inherit;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

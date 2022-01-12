@@ -1,8 +1,8 @@
-@use "../../global"as g;
+@use "../../foundation"as f;
 
 .c-mainvisual {
     display: flex;
     align-items: center;
     background-size: cover;
-    color: g.$color--white;
+    color: f.$color--white;
 }

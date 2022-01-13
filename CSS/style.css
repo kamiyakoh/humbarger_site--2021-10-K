@@ -305,7 +305,6 @@ body.fix {
 }
 
 .p-map {
-  min-height: 690px;
   background-position: center center;
   background-size: cover;
   color: #FFF;
@@ -314,6 +313,9 @@ body.fix {
 .p-map__inner {
   padding-top: 40px;
   margin: 0 42px;
+}
+.p-map__minHeight {
+  min-height: 690px;
 }
 .p-map__heading {
   position: relative;

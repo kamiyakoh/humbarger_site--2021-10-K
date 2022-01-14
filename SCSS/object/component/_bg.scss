@@ -22,6 +22,10 @@
 
         &--shadow64 {
             background: linear-gradient(f.$grargba--shadow-A 0%, f.$grargba--shadow-A 60%, f.$grargba--shadow-B 60%, f.$grargba--shadow-B 100%);
+
+            @include f.mq-up(tab) {
+                background: f.$grargba--shadow-A;
+            }
         }
     }
 
@@ -46,6 +50,10 @@
     &__mainvisual {
         &--frontPage {
             background-image: url(../images/mainvisual__frontPage--sp.png);
+
+            @include f.mq-up(tab) {
+                background-image: url(../images/mainvisual__frontPage--tab.png);
+            }
         }
     }
 }

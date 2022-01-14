@@ -7,5 +7,9 @@
     &__ttl {
         font-size: 3.6rem;
         margin-left: 2.5rem;
+
+        @include f.mq-up(tab) {
+            margin-left: 8.5rem;
+        }
     }
 }

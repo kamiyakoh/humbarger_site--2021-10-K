@@ -124,6 +124,11 @@ body.fix {
 .c-bg__bra--shadow64 {
   background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.39) 60%, rgba(0, 0, 0, 0.39) 100%);
 }
+@media screen and (min-width: 834px) {
+  .c-bg__bra--shadow64 {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
 .c-bg__img--brownWall {
   background-image: url(../images/brownWall.png);
 }
@@ -138,6 +143,11 @@ body.fix {
 }
 .c-bg__mainvisual--frontPage {
   background-image: url(../images/mainvisual__frontPage--sp.png);
+}
+@media screen and (min-width: 834px) {
+  .c-bg__mainvisual--frontPage {
+    background-image: url(../images/mainvisual__frontPage--tab.png);
+  }
 }
 
 .c-headingR {
@@ -181,6 +191,13 @@ body.fix {
   right: 4.3vw;
   cursor: pointer;
 }
+@media screen and (min-width: 834px) {
+  .p-header__menuBtn {
+    font-size: 3.4rem;
+    top: 18px;
+    right: 21px;
+  }
+}
 .p-header__ttl {
   font-size: 4rem;
   line-height: 1.325;
@@ -197,6 +214,11 @@ body.fix {
   width: 32px;
   height: 32px;
   cursor: pointer;
+}
+@media screen and (min-width: 834px) {
+  .c-btn__close {
+    right: 25px;
+  }
 }
 .c-btn__close span {
   display: block;
@@ -222,8 +244,14 @@ body.fix {
   position: relative;
   font-size: 2rem;
   max-width: 100%;
-  margin: 38px 0px 40px 31px;
   padding-right: 121px;
+  margin: 38px 0px 40px 31px;
+}
+@media screen and (min-width: 834px) {
+  .p-searchForm {
+    padding-right: 294px;
+    margin: 38px 0px 40px 144px;
+  }
 }
 .p-searchForm::before {
   content: "";
@@ -235,11 +263,21 @@ body.fix {
   height: 24px;
   background: url(../images/seach-icon.png) no-repeat center center/auto 100%;
 }
+@media screen and (min-width: 834px) {
+  .p-searchForm::before {
+    left: 12px;
+  }
+}
 .p-searchForm__keyword {
   height: 46px;
   width: 100%;
   padding-left: calc(30px + 1.5rem);
   margin-right: 12px;
+}
+@media screen and (min-width: 834px) {
+  .p-searchForm__keyword {
+    margin-right: 14px;
+  }
 }
 .p-searchForm__submit {
   position: absolute;
@@ -251,6 +289,12 @@ body.fix {
   color: #707070;
   font-size: 1.6rem;
 }
+@media screen and (min-width: 834px) {
+  .p-searchForm__submit {
+    right: 144px;
+    width: 136px;
+  }
+}
 
 .p-mainvisual {
   height: 285px;
@@ -260,9 +304,23 @@ body.fix {
   font-size: 3.6rem;
   margin-left: 2.5rem;
 }
+@media screen and (min-width: 834px) {
+  .p-mainvisual__ttl {
+    margin-left: 8.5rem;
+  }
+}
 
 .p-main__inner {
+  display: flex;
+  flex-direction: column;
   margin: 0 20px;
+}
+@media screen and (min-width: 834px) {
+  .p-main__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px;
+  }
 }
 
 .p-card {
@@ -271,11 +329,23 @@ body.fix {
   padding: 0 10px;
   background-size: cover;
 }
+@media screen and (min-width: 834px) {
+  .p-card {
+    width: calc(50% - 20px);
+    min-height: 680px;
+    margin: 0;
+  }
+}
 .p-card__ttl {
   font-size: 4.1rem;
   color: #EAEAEA;
   position: relative;
   margin: 11px 0 45px;
+}
+@media screen and (min-width: 834px) {
+  .p-card__ttl {
+    font-size: 4.4rem;
+  }
 }
 .p-card__ttl::after {
   content: "";
@@ -284,8 +354,13 @@ body.fix {
   display: inline-block;
   background-color: #FFF;
   position: absolute;
-  bottom: -19.3px;
+  bottom: -19.5px;
   left: 0;
+}
+@media screen and (min-width: 834px) {
+  .p-card__ttl::after {
+    width: 36px;
+  }
 }
 .p-card__board {
   color: #3C2A10;
@@ -294,11 +369,21 @@ body.fix {
   margin-bottom: 10px;
   padding: 0 10px;
 }
+@media screen and (min-width: 834px) {
+  .p-card__board {
+    min-height: 172px;
+  }
+}
 .p-card__heading, .p-card__txt {
-  padding-top: 19px;
+  padding-top: 20px;
 }
 .p-card__heading {
   font-size: 2.2rem;
+}
+@media screen and (min-width: 834px) {
+  .p-card__heading {
+    font-size: 2.4rem;
+  }
 }
 .p-card__txt {
   line-height: 1.4375;
@@ -310,12 +395,22 @@ body.fix {
   color: #FFF;
   margin-top: 50px;
 }
+@media screen and (min-width: 834px) {
+  .p-map {
+    margin-top: 0;
+  }
+}
 .p-map__inner {
   padding-top: 40px;
   margin: 0 42px;
 }
 .p-map__minHeight {
   min-height: 690px;
+}
+@media screen and (min-width: 834px) {
+  .p-map__minHeight {
+    min-height: 415px;
+  }
 }
 .p-map__heading {
   position: relative;
@@ -362,6 +457,12 @@ body.fix {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+@media screen and (min-width: 834px) {
+  .p-sidemenu__nav {
+    left: calc(100% - 367px);
+    width: 367px;
+  }
 }
 .p-sidemenu__main {
   color: #707070;

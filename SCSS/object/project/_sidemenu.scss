@@ -26,6 +26,11 @@
         z-index: 500;
         width: calc(100% - 47px);
         height: fit-content;
+
+        @include f.mq-up(tab) {
+            left: calc(100% - 367px);
+            width: 367px;
+        }
     }
 
     &__main {

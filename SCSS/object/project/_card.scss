@@ -6,11 +6,21 @@
     padding: 0 10px;
     background-size: cover;
 
+    @include f.mq-up(tab) {
+        width: calc(50% - 20px);
+        min-height: 680px;
+        margin: 0;
+    }
+
     &__ttl {
         font-size: 4.1rem;
         color: f.$color--warmwhtie;
         position: relative;
         margin: 11px 0 45px;
+
+        @include f.mq-up(tab) {
+            font-size: 4.4rem;
+        }
 
         &::after {
             content: "";
@@ -19,11 +29,14 @@
             display: inline-block;
             background-color: f.$color--white;
             position: absolute;
-            bottom: -19.3px;
+            bottom: -19.5px;
             left: 0;
+
+            @include f.mq-up(tab) {
+                width: 36px;
+            }
         }
     }
-
 
     &__board {
         color: f.$color--brown;
@@ -31,15 +44,23 @@
         overflow-wrap: break-word;
         margin-bottom: 10px;
         padding: 0 10px;
+
+        @include f.mq-up(tab) {
+            min-height: 172px;
+        }
     }
 
     &__heading,
     &__txt {
-        padding-top: 19px;
+        padding-top: 20px;
     }
 
     &__heading {
         font-size: 2.2rem;
+
+        @include f.mq-up(tab) {
+            font-size: 2.4rem;
+        }
     }
 
     &__txt {

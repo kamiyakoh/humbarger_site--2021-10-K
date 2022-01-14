@@ -1,10 +1,10 @@
 $sizes: sp,
-tablet,
+tab,
 pc;
 
-$breakpoint-up: ('sp': 'screen and (max-width: 599px)',
-    'tabllt': 'screen and (min-width: 600px)',
-    'pc': 'screen and (min-width: 1025px)',
+$breakpoint-up: (sp: 'screen and (max-width: 599px)',
+    tab: 'screen and (min-width: 834px)',
+    pc: 'screen and (min-width: 1025px)',
 ) !default;
 
 @mixin mq-up($breakpoint: sp) {

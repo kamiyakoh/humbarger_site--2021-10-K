@@ -1,5 +1,13 @@
 @use "../../foundation"as f;
 
 .p-main__inner {
+    display: flex;
+    flex-direction: column;
     margin: 0 20px;
+
+    @include f.mq-up(tab) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 40px;
+    }
 }

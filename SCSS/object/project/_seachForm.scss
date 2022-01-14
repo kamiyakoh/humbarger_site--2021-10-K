@@ -4,8 +4,13 @@
     position: relative;
     font-size: 2.0rem;
     max-width: 100%;
-    margin: 38px 0px 40px 31px;
     padding-right: 121px;
+    margin: 38px 0px 40px 31px;
+
+    @include f.mq-up(tab) {
+        padding-right: 294px;
+        margin: 38px 0px 40px 144px;
+    }
 
     &::before {
         content: "";
@@ -16,6 +21,10 @@
         width: 24px;
         height: 24px;
         background: url(../images/seach-icon.png) no-repeat center center / auto 100%;
+
+        @include f.mq-up(tab) {
+            left: 12px;
+        }
     }
 
     &__keyword {
@@ -23,6 +32,10 @@
         width: 100%;
         padding-left: calc(30px + 1.5rem);
         margin-right: 12px;
+
+        @include f.mq-up(tab) {
+            margin-right: 14px;
+        }
     }
 
     &__submit {
@@ -34,5 +47,10 @@
         line-height: 2;
         color: f.$color--gray;
         font-size: 1.6rem;
+
+        @include f.mq-up(tab) {
+            right: 144px;
+            width: 136px;
+        }
     }
 }

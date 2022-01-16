@@ -9,6 +9,10 @@
         background-color: f.$bgcolor--lightCream;
     }
 
+    &--creamA {
+        background-color: f.$gracolor--cream-A;
+    }
+
     &__rgba {
         &--board {
             background-color: f.$bgrgba--board;
@@ -40,6 +44,10 @@
 
         &--map {
             background-image: url(../images/map--sp.png);
+
+            @include f.mq-up(tab) {
+                background-image: url(../images/map.png);
+            }
         }
 
         &--burgerAndFrenchFries {

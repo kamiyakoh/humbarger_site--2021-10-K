@@ -19,7 +19,6 @@
     }
 
     &__nav {
-        background-color: f.$gracolor--cream-A;
         background-attachment: fixed;
         position: relative;
         left: 47px;
@@ -30,6 +29,10 @@
         @include f.mq-up(tab) {
             left: calc(100% - 367px);
             width: 367px;
+        }
+
+        @include f.mq-up(pc) {
+            height: inherit;
         }
     }
 

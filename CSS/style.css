@@ -110,6 +110,14 @@ body.fix {
   justify-content: center;
   position: relative;
 }
+@media screen and (min-width: 1025px) {
+  .l-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+}
 
 .l-footer {
   background-repeat: repeat;
@@ -241,10 +249,22 @@ body.fix {
     right: 21px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .p-header__menuBtn {
+    display: none;
+  }
+}
 .p-header__ttl {
   font-size: 4rem;
   line-height: 1.325;
   margin-top: 40px;
+}
+@media screen and (min-width: 1025px) {
+  .p-header__ttl {
+    font-size: 6.4rem;
+    margin-left: 4%;
+    margin-top: 0;
+  }
 }
 
 .c-btn__close {
@@ -296,6 +316,14 @@ body.fix {
     margin: 38px 0px 40px 144px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .p-searchForm {
+    width: 37%;
+    min-width: 300px;
+    padding-right: 180px;
+    margin: 0;
+  }
+}
 .p-searchForm::before {
   content: "";
   display: inline-block;
@@ -322,6 +350,11 @@ body.fix {
     margin-right: 14px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .p-searchForm__keyword {
+    margin-right: 0.75%;
+  }
+}
 .p-searchForm__submit {
   position: absolute;
   right: 31px;
@@ -336,6 +369,11 @@ body.fix {
   .p-searchForm__submit {
     right: 144px;
     width: 136px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-searchForm__submit {
+    right: 31px;
   }
 }
 

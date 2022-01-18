@@ -18,6 +18,16 @@
         }
     }
 
+    &__ttl {
+        display: none;
+
+        @include f.mq-up(pc) {
+            display: block;
+            font-size: 34px;
+            padding: 85px 0 85px 14%;
+        }
+    }
+
     &__nav {
         background-attachment: fixed;
         position: relative;
@@ -32,6 +42,8 @@
         }
 
         @include f.mq-up(pc) {
+            position: static;
+            width: 19vw;
             height: inherit;
         }
     }
@@ -39,6 +51,10 @@
     &__main {
         color: f.$color--gray;
         padding-top: 212px;
+
+        @include f.mq-up(pc) {
+            padding-top: 0;
+        }
 
         &>li {
             margin-left: 14%;

@@ -30,6 +30,11 @@
             @include f.mq-up(tab) {
                 background: f.$grargba--shadow-A;
             }
+
+            @include f.mq-up(pc) {
+                background: linear-gradient(to right, f.$grargba--shadow-A 0%, f.$grargba--shadow-A 60%, f.$grargba--shadow-B 60%, f.$grargba--shadow-B 100%);
+            }
+
         }
     }
 

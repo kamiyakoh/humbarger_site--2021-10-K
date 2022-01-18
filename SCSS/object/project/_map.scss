@@ -13,6 +13,12 @@
     &__inner {
         padding-top: 40px;
         margin: 0 42px;
+
+        @include f.mq-up(pc) {
+            width: calc(60% - 13.3vw);
+            padding-top: 83px;
+            margin-left: 6.25vw;
+        }
     }
 
     &__minHeight {
@@ -21,12 +27,20 @@
         @include f.mq-up(tab) {
             min-height: 415px;
         }
+
+        @include f.mq-up(pc) {
+            min-height: 650px;
+        }
     }
 
     &__heading {
         position: relative;
         font-size: 3rem;
         margin-bottom: 30px;
+
+        @include f.mq-up(pc) {
+            margin-bottom: 120px;
+        }
 
         &::after {
             content: "";
@@ -37,6 +51,10 @@
             position: absolute;
             bottom: -20px;
             left: 0;
+
+            @include f.mq-up(pc) {
+                bottom: -55.5px;
+            }
         }
     }
 

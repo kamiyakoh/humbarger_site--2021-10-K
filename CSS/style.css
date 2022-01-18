@@ -319,7 +319,7 @@ body.fix {
 @media screen and (min-width: 1025px) {
   .p-searchForm {
     width: 37%;
-    min-width: 300px;
+    min-width: 290px;
     padding-right: 180px;
     margin: 0;
   }
@@ -381,6 +381,11 @@ body.fix {
   height: 285px;
   background-position: center center;
 }
+@media screen and (min-width: 1025px) {
+  .p-mainvisual {
+    height: 530px;
+  }
+}
 .p-mainvisual__ttl {
   font-size: 3.6rem;
   margin-left: 2.5rem;
@@ -388,6 +393,11 @@ body.fix {
 @media screen and (min-width: 834px) {
   .p-mainvisual__ttl {
     margin-left: 8.5rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-mainvisual__ttl {
+    font-size: 4rem;
   }
 }
 
@@ -401,6 +411,11 @@ body.fix {
     flex-direction: row;
     justify-content: space-between;
     margin: 40px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-main__inner {
+    margin: 120px;
   }
 }
 
@@ -417,6 +432,14 @@ body.fix {
     margin: 0;
   }
 }
+@media screen and (min-width: 1025px) {
+  .p-card {
+    width: calc(50% - 40px);
+    min-height: 1196px;
+    margin: 0;
+    padding: 0 20px;
+  }
+}
 .p-card__ttl {
   font-size: 4.1rem;
   color: #EAEAEA;
@@ -426,6 +449,12 @@ body.fix {
 @media screen and (min-width: 834px) {
   .p-card__ttl {
     font-size: 4.4rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-card__ttl {
+    font-size: 8rem;
+    margin: 20px 0 100px;
   }
 }
 .p-card__ttl::after {
@@ -443,6 +472,12 @@ body.fix {
     width: 36px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .p-card__ttl::after {
+    width: 63px;
+    bottom: -34.5px;
+  }
+}
 .p-card__board {
   color: #3C2A10;
   min-height: 164px;
@@ -455,19 +490,30 @@ body.fix {
     min-height: 172px;
   }
 }
-.p-card__heading, .p-card__txt {
-  padding-top: 20px;
+@media screen and (min-width: 1025px) {
+  .p-card__board {
+    min-height: 174px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
 }
 .p-card__heading {
   font-size: 2.2rem;
+  padding-top: 20px;
 }
 @media screen and (min-width: 834px) {
   .p-card__heading {
     font-size: 2.4rem;
   }
 }
+@media screen and (min-width: 1025px) {
+  .p-card__heading {
+    padding-top: 26px;
+  }
+}
 .p-card__txt {
   line-height: 1.4375;
+  padding-top: 20px;
 }
 
 .p-map {

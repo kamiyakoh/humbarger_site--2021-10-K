@@ -4,12 +4,20 @@
     height: 285px;
     background-position: center center;
 
+    @include f.mq-up(pc) {
+        height: 530px
+    }
+
     &__ttl {
         font-size: 3.6rem;
         margin-left: 2.5rem;
 
         @include f.mq-up(tab) {
             margin-left: 8.5rem;
+        }
+
+        @include f.mq-up(pc) {
+            font-size: 4rem;
         }
     }
 }

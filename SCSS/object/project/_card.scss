@@ -12,6 +12,13 @@
         margin: 0;
     }
 
+    @include f.mq-up(pc) {
+        width: calc(50% - 40px);
+        min-height: 1196px;
+        margin: 0;
+        padding: 0 20px;
+    }
+
     &__ttl {
         font-size: 4.1rem;
         color: f.$color--warmwhtie;
@@ -20,6 +27,11 @@
 
         @include f.mq-up(tab) {
             font-size: 4.4rem;
+        }
+
+        @include f.mq-up(pc) {
+            font-size: 8rem;
+            margin: 20px 0 100px;
         }
 
         &::after {
@@ -35,6 +47,11 @@
             @include f.mq-up(tab) {
                 width: 36px;
             }
+
+            @include f.mq-up(pc) {
+                width: 63px;
+                bottom: -34.5px;
+            }
         }
     }
 
@@ -48,22 +65,29 @@
         @include f.mq-up(tab) {
             min-height: 172px;
         }
-    }
 
-    &__heading,
-    &__txt {
-        padding-top: 20px;
+        @include f.mq-up(pc) {
+            min-height: 174px;
+            margin-bottom: 20px;
+            padding: 0 20px;
+        }
     }
 
     &__heading {
         font-size: 2.2rem;
+        padding-top: 20px;
 
         @include f.mq-up(tab) {
             font-size: 2.4rem;
+        }
+
+        @include f.mq-up(pc) {
+            padding-top: 26px;
         }
     }
 
     &__txt {
         line-height: 1.4375;
+        padding-top: 20px;
     }
 }

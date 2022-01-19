@@ -88,6 +88,10 @@
 
     &__txt {
         line-height: 1.4375;
-        padding-top: 20px;
+        padding: 20px 0 10px;
+
+        @include f.mq-up(pc) {
+            padding: 20px 0 20px;
+        }
     }
 }

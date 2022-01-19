@@ -272,7 +272,7 @@ body.fix {
   }
 }
 
-.c-btn__close {
+.p-btn__close {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -284,20 +284,20 @@ body.fix {
   cursor: pointer;
 }
 @media screen and (min-width: 834px) {
-  .c-btn__close {
+  .p-btn__close {
     right: 25px;
   }
 }
 @media screen and (min-width: 1025px) {
-  .c-btn__close {
+  .p-btn__close {
     display: none;
   }
 }
-.c-btn__close span {
+.p-btn__close span {
   display: block;
   position: relative;
 }
-.c-btn__close span::before, .c-btn__close span::after {
+.p-btn__close span::before, .p-btn__close span::after {
   content: "";
   position: absolute;
   right: 50%;
@@ -306,10 +306,10 @@ body.fix {
   height: 6px;
   background-color: #707070;
 }
-.c-btn__close span::before {
+.p-btn__close span::before {
   transform: translate(50%, 50%) rotate(45deg);
 }
-.c-btn__close span::after {
+.p-btn__close span::after {
   transform: translate(50%, 50%) rotate(-45deg);
 }
 
@@ -523,7 +523,12 @@ body.fix {
 }
 .p-card__txt {
   line-height: 1.4375;
-  padding-top: 20px;
+  padding: 20px 0 10px;
+}
+@media screen and (min-width: 1025px) {
+  .p-card__txt {
+    padding: 20px 0 20px;
+  }
 }
 
 .p-map {

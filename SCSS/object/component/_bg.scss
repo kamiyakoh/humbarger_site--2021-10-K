@@ -13,9 +13,17 @@
         background-color: f.$gracolor--cream-A;
     }
 
+    &--lightBrown {
+        background-color: f.$bgcolor--lightBrown;
+    }
+
     &__rgba {
         &--board {
             background-color: f.$bgrgba--board;
+        }
+
+        &--shadowScreen {
+            background-color: f.$bgrgba--shadowScreen;
         }
     }
 
@@ -67,6 +75,18 @@
             @include f.mq-up(tab) {
                 background-image: url(../images/mainvisual__frontPage--tab.png);
             }
+        }
+
+        &--archive {
+            background-image: url(../images/mainvisual__archive--sp.png);
+        }
+
+        @include f.mq-up(tab) {
+            background-image: url(../images/mainvisual__archive--tab.png);
+        }
+
+        @include f.mq-up(pc) {
+            background-image: url(../images/mainvisual__archive.png);
         }
     }
 }

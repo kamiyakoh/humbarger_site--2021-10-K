@@ -2,9 +2,10 @@
 
 .p-sidemenu {
     &__shadowScreen {
-        position: none;
+        display: none;
 
         &.slideIn {
+            display: block;
             position: fixed;
             top: 0;
             left: 0;
@@ -14,7 +15,7 @@
         }
 
         &.sledeOut {
-            position: none;
+            display: none;
         }
     }
 

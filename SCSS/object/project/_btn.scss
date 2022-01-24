@@ -42,4 +42,16 @@
             }
         }
     }
+
+    &--archive {
+        display: block;
+        text-align: center;
+        line-height: 42.5px;
+        border-radius: 21.25px;
+        color: f.$color--gray;
+        background-color: f.$color--white;
+        width: 163px;
+        height: 42.5px;
+        margin: 40px auto 0;
+    }
 }

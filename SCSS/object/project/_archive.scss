@@ -1,0 +1,26 @@
+@use "../../foundation"as f;
+
+.p-archive {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__inner {
+        z-index: 200;
+        padding: 30.5px 17px 43.7px;
+    }
+
+    &__ttl {
+        font-size: 2rem;
+        padding-bottom: 24px;
+    }
+
+    &__txt {
+        padding: 10px 16.7% 0 0;
+    }
+}

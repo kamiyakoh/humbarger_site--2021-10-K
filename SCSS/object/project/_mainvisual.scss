@@ -8,6 +8,13 @@
         height: 530px
     }
 
+    &__shadowScreen {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
     &__ttl {
         font-size: 3.6rem;
         margin-left: 2.5rem;
@@ -19,5 +26,13 @@
         @include f.mq-up(pc) {
             font-size: 4rem;
         }
+
+        &--archive {
+            margin-left: 3.7rem;
+        }
+    }
+
+    &__subttl {
+        font-size: 1.6rem;
     }
 }

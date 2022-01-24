@@ -1,0 +1,11 @@
+@use "../../foundation"as f;
+
+.c-txtColor {
+    &--white {
+        color: f.$color--white;
+    }
+
+    &--brown {
+        font-size: f.$color--brown;
+    }
+}

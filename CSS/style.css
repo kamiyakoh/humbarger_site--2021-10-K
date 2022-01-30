@@ -228,6 +228,9 @@ body.fix {
 .c-txtColor--white {
   color: #FFF;
 }
+.c-txtColor__gray {
+  color: #707070;
+}
 .c-txtColor--brown {
   font-size: #3C2A10;
 }
@@ -669,6 +672,18 @@ body.fix {
 }
 .p-archive__txt {
   padding: 10px 16.7% 0 0;
+}
+
+.p-pagination {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 60px 0 30px;
+}
+.p-pagination__selecter {
+  font-size: 2.5rem;
+}
+.p-pagination__selecter span {
+  font-size: 1.6rem;
 }
 
 .p-sidemenu__shadowScreen {

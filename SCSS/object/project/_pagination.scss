@@ -12,6 +12,10 @@
         padding: 105px 0px 30px;
     }
 
+    @include f.mq-up(pc) {
+        padding: 150px 0px 65px;
+    }
+
     &__dp {
         display: none;
         margin-left: 15px;

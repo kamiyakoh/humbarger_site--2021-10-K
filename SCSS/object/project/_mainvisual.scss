@@ -5,7 +5,13 @@
     background-position: center center;
 
     @include f.mq-up(pc) {
-        height: 530px
+        height: 530px;
+    }
+
+    &--archive {
+        @include f.mq-up(pc) {
+            height: 240px;
+        }
     }
 
     &__shadowScreen {
@@ -46,6 +52,10 @@
             position: absolute;
             top: 352px;
             margin-left: 2rem;
+        }
+
+        @include f.mq-up(pc) {
+            top: 329px;
         }
     }
 }

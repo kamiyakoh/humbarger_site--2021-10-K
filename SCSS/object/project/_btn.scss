@@ -53,5 +53,13 @@
         width: 163px;
         height: 42.5px;
         margin: 40px auto 0;
+
+        @include f.mq-up(pc) {
+            line-height: 76px;
+            border-radius: 38px;
+            width: 292px;
+            height: 76px;
+            margin: 60px auto 0;
+        }
     }
 }

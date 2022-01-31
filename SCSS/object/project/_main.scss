@@ -11,7 +11,7 @@
         }
 
         @include f.mq-up(pc) {
-            margin: 0 6vw;
+            margin: 0 5.2vw;
         }
 
         &--frontPage {
@@ -28,7 +28,29 @@
     }
 
     &__ttl {
+        color: f.$color--brown;
         font-size: 2.8rem;
         padding: 30px 0;
+
+        @include f.mq-up(tab) {
+            padding-top: 35px 0 25px;
+        }
+
+        @include f.mq-up(pc) {
+            padding: 60px 0 25px;
+        }
+    }
+
+    &__txt {
+        color: f.$color--brown;
+        margin-bottom: 0;
+
+        @include f.mq-up(tab) {
+            margin-bottom: 37px;
+        }
+
+        @include f.mq-up(pc) {
+            margin-bottom: 70px;
+        }
     }
 }

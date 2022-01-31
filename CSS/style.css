@@ -352,6 +352,15 @@ body.fix {
   height: 42.5px;
   margin: 40px auto 0;
 }
+@media screen and (min-width: 1025px) {
+  .p-btn--archive {
+    line-height: 76px;
+    border-radius: 38px;
+    width: 292px;
+    height: 76px;
+    margin: 60px auto 0;
+  }
+}
 
 .p-searchForm {
   position: relative;
@@ -436,6 +445,11 @@ body.fix {
     height: 530px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .p-mainvisual--archive {
+    height: 240px;
+  }
+}
 .p-mainvisual__shadowScreen {
   display: flex;
   align-items: center;
@@ -477,6 +491,11 @@ body.fix {
     margin-left: 2rem;
   }
 }
+@media screen and (min-width: 1025px) {
+  .p-mainvisual__subttl {
+    top: 329px;
+  }
+}
 
 .p-main__inner {
   display: flex;
@@ -490,7 +509,7 @@ body.fix {
 }
 @media screen and (min-width: 1025px) {
   .p-main__inner {
-    margin: 0 6vw;
+    margin: 0 5.2vw;
   }
 }
 @media screen and (min-width: 834px) {
@@ -506,8 +525,33 @@ body.fix {
   }
 }
 .p-main__ttl {
+  color: #3C2A10;
   font-size: 2.8rem;
   padding: 30px 0;
+}
+@media screen and (min-width: 834px) {
+  .p-main__ttl {
+    padding-top: 35px 0 25px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-main__ttl {
+    padding: 60px 0 25px;
+  }
+}
+.p-main__txt {
+  color: #3C2A10;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 834px) {
+  .p-main__txt {
+    margin-bottom: 37px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-main__txt {
+    margin-bottom: 70px;
+  }
 }
 
 .p-card {
@@ -688,6 +732,11 @@ body.fix {
     flex-direction: row;
   }
 }
+@media screen and (min-width: 834px) {
+  .p-archive {
+    padding-top: 30px;
+  }
+}
 .p-archive__img {
   width: 100%;
   height: auto;
@@ -707,9 +756,26 @@ body.fix {
     padding: 30px 35px 40px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .p-archive__inner {
+    width: 50%;
+    padding: 53px 4.7% 60px;
+  }
+}
 .p-archive__ttl {
   font-size: 2rem;
   padding-bottom: 24px;
+}
+@media screen and (min-width: 1025px) {
+  .p-archive__ttl {
+    font-size: 3.6rem;
+    padding-bottom: 37px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-archive__subttl {
+    font-size: 2.4rem;
+  }
 }
 .p-archive__txt {
   padding-top: 10px;
@@ -718,6 +784,12 @@ body.fix {
 @media screen and (min-width: 834px) {
   .p-archive__txt {
     padding-right: 8%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-archive__txt {
+    padding-top: 17px;
+    padding-right: 7.7%;
   }
 }
 
@@ -732,6 +804,11 @@ body.fix {
   .p-pagination {
     justify-content: center;
     padding: 105px 0px 30px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-pagination {
+    padding: 150px 0px 65px;
   }
 }
 .p-pagination__dp {

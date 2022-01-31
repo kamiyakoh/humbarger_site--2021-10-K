@@ -29,10 +29,23 @@
 
         &--archive {
             margin-left: 3.7rem;
+
+            @include f.mq-up(tab) {
+                font-size: 6rem;
+                margin-left: 8.6rem;
+            }
         }
     }
 
     &__subttl {
+        display: block;
         font-size: 1.6rem;
+
+        @include f.mq-up(tab) {
+            display: inline;
+            position: absolute;
+            top: 352px;
+            margin-left: 2rem;
+        }
     }
 }

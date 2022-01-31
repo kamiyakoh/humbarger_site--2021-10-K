@@ -5,14 +5,27 @@
     flex-direction: column;
     padding-top: 20px;
 
+    @include f.mq-up(tab) {
+        flex-direction: row;
+    }
+
     &__img {
         width: 100%;
         height: auto;
+        background-position: center center;
+
+        @include f.mq-up(tab) {
+            width: 50%;
+        }
     }
 
     &__inner {
-        z-index: 200;
-        padding: 30.5px 17px 43.7px;
+        padding: 30px 17px 43.7px;
+
+        @include f.mq-up(tab) {
+            width: 50%;
+            padding: 30px 35px 40px;
+        }
     }
 
     &__ttl {
@@ -21,6 +34,11 @@
     }
 
     &__txt {
-        padding: 10px 16.7% 0 0;
+        padding-top: 10px;
+        padding-right: 16.7%;
+
+        @include f.mq-up(tab) {
+            padding-right: 8%;
+        }
     }
 }

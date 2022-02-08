@@ -1,0 +1,14 @@
+@use "../../foundation"as f;
+
+.p-blockquote {
+    padding: 30px 18px;
+
+    &__cite {
+        padding: 30px 0;
+
+        cite a {
+            font-style: normal;
+            text-decoration: underline;
+        }
+    }
+}

@@ -5,6 +5,10 @@
         background-color: f.$color--white;
     }
 
+    &--lightGray {
+        background-color: f.$bgcolor--lightGray;
+    }
+
     &--lightCream {
         background-color: f.$bgcolor--lightCream;
     }
@@ -87,6 +91,10 @@
 
         @include f.mq-up(pc) {
             background-image: url(../images/mainvisual__archive.png);
+        }
+
+        &--single {
+            background-image: url(../images/mainvisual__single.png);
         }
     }
 }

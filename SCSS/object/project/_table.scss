@@ -11,5 +11,9 @@
 
     tr td:nth-child(1) {
         width: 40%;
+
+        @include f.mq-up(tab) {
+            width: 30%;
+        }
     }
 }

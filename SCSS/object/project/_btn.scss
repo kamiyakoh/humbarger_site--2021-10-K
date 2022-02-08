@@ -4,6 +4,11 @@
     &__common {
         width: 100%;
         padding: 30px;
+
+        @include f.mq-up(tab) {
+            width: 430px;
+            padding: 40px;
+        }
     }
 
     &__close {

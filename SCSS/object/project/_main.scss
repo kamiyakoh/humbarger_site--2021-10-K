@@ -56,15 +56,31 @@
         }
     }
 
-    &__txtzone {
-        min-height: 145px;
-    }
-
     &__my {
-        padding-bottom: 30px;
+        padding-bottom: 180px;
+
+        @include f.mq-up(tab) {
+            padding-bottom: 230px;
+        }
+
+        @include f.mq-up(pc) {
+            padding-bottom: 355px;
+        }
 
         &>* {
             margin-top: 30px;
+
+            @include f.mq-up(tab) {
+                margin-top: 60px;
+            }
+        }
+
+        section p {
+            margin-top: 30px;
+
+            @include f.mq-up(tab) {
+                margin-top: 60px;
+            }
         }
     }
 }

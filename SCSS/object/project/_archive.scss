@@ -16,7 +16,8 @@
     &__img {
         width: 100%;
         height: auto;
-        background-position: center center;
+        object-fit: cover;
+        object-position: left center;
 
         @include f.mq-up(tab) {
             width: 50%;

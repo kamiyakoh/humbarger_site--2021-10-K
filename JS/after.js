@@ -21,7 +21,6 @@ $('.js-btn__sidemenu').on('click', function () {
 $(window).resize(function () {
     if (window.matchMedia("(min-width: 1025px)").matches) {
         $('body').removeClass('fix').css('top', 0 + 'px');
-        window.scrollTo(0, scrollPos);
         $('.l-sidemenu, .p-sidemenu__shadowScreen').removeClass('slideOut');
         $('.l-sidemenu, .p-sidemenu__shadowScreen').removeClass('slideIn');
     }

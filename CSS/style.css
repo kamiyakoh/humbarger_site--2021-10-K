@@ -802,7 +802,10 @@ body.fix {
 .p-archive__img {
   width: 100%;
   height: auto;
-  background-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left center;
+     object-position: left center;
 }
 @media screen and (min-width: 834px) {
   .p-archive__img {
